@@ -52,7 +52,7 @@ const Contact = () => {
         return
       }
 
-      const response = await fetch("https://model-agency-frontend.vercel.app/contact", {
+      const response = await fetch("https://model-agency-rouge.vercel.app/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
