@@ -2,11 +2,7 @@ const express = require("express");
 const app = express();
 const nodemailer = require("nodemailer");
 const cors = require("cors");
-app.use(cors({
-  origin:"https://model-agency-frontend.vercel.app",
-  methods:"GET, POST",
-  allowedHeaders: "Content-Type, Authorization"
-}));
+app.use(cors());
 app.use(express.json());
 //ruta recibir correos
 app.post("/contact", async(req, res) => {
