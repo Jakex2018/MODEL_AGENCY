@@ -1,6 +1,6 @@
 {
     "routes":[{
-        "src":"/contact",
+        "src":"/(.*)",
         "dest":"https://model-agency-rouge.vercel.app/contact"
     }]
 }
