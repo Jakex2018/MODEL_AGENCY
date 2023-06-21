@@ -8,6 +8,15 @@ const Contact = () => {
   const [instagram, setInstagram] = useState("");
   const [mensaje, setMensaje] = useState("");
   const [errors, setErrors] = useState({});
+
+  const handleReset = (e) => {
+    setNombre("");
+    setEmail("");
+    setPhone("");
+    setInstagram("");
+    setMensaje("");
+    setErrors("");
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("formulario");
@@ -68,6 +77,8 @@ const Contact = () => {
       ///const data =await response.json()
       if (response.ok) {
         alert("¡Registro Exitoso!");
+        handleReset();
+        window.location.href= '/';
       } else {
         alert("Error al enviar formulario");
       }
