@@ -1,6 +1,11 @@
 {
+    "version":2,
+    "builds":[{
+        "src":"*.js",
+        "use":"@vercel/node"
+    }],
     "routes":[{
         "src":"/(.*)",
-        "dest":"https://model-agency-rouge.vercel.app/contact"
+        "dest":"/app.js"
     }]
 }
